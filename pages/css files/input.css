@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+@keyframes snow {
+    from {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    to {
+        background-position: 0 1000px, 100px 800px, -100px 600px;
+    }
+}
+
+.snow {
+    background-image:
+        radial-gradient(white 2px, transparent 2px),
+        radial-gradient(white 3px, transparent 3px),
+        radial-gradient(white 1px, transparent 1px);
+
+    background-size:
+        120px 120px,
+        200px 200px,
+        80px 80px;
+
+    animation: snow 50s linear infinite;
+
+    opacity: 0.4;
+
+    pointer-events: none;
+}
