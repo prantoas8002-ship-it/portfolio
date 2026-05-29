@@ -43,22 +43,41 @@
             </div>
         </nav>
         <!-- contents -->
-        <div class="flex flex-col md:flex-row justify-center items-center">
-            <div class="text-white w-full md:w-1/2 h-[70vh] flex flex-col justify-evenly items-center md:items-start gap-10 md:gap-0">
-                <p class=" text-6xl md:text-7xl text-center md:text-left font-bold">Hi, I'm Pranto</p>
-                <p
-                    class="text-2xl md:text-4xl font-bold inline-block bg-linear-to-r from-violet-700 to-pink-600 text-transparent bg-clip-text ">
-                    Full Stack Developer</p>
-                <p class="font-normal text-center md:text-left md:text-2xl text-gray-400 ">crafting modern, responsive and user friendly websites
-                    with
-                    passion and precession</p>
-                <button
-                    class="border border-violet-700 bg-linear-to-r from-violet-700 to-blue-600 rounded-tl-2xl rounded-br-2xl shadow-[0_0_30px_rgba(139,92,246,0.7)]">
-                    <p
-                        class="font-bold text-normal md:text-2xl text-gray-200 p-2 md:p-4 hover:scale-110 transition-all duration-300">
-                        Download Resume </p>
-                </button>
-                <div class="flex justify-start items-center gap-2 md:gap-4 text-pink-700 text-xl md:text-2xl">
+        <div class="w-full h-[105vh] md:h-[95vh] flex justify-center items-center">
+            <div class="h-full w-[60%] borde rounded-3xl backdrop-blur-xs">
+                <form class="w-full p-4 md:p-8">
+                    <fieldset class="border-2 border-gray-300 p-6 rounded-xl">
+                        <legend class="text-center px-3 text-lg font-bold text-white">Account Details</legend>
+
+                        <div class="mb-5">
+                            <label for="username" class="block text-sm md:text-xl mb-4 font-medium text-white">Your
+                                Name</label>
+                            <input type="text" id="username" placeholder="Enter your name"
+                                class="w-full p-4 border border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all text-white bg-transparent">
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="useremail" class="block text-sm md:text-xl mb-4 font-medium text-white">Your
+                                Email</label>
+                            <input type="email" id="useremail" placeholder="Enter your email"
+                                class="w-full p-4 border border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all text-white bg-transparent">
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="usermessage" class="block text-sm md:text-xl mb-4 font-medium text-white">Your
+                                Message</label>
+
+                            <textarea id="usermessage" rows="4" placeholder="Enter your message"
+                                class="w-full p-4 h-32 border border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all text-white bg-transparent resize-y"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-pink-700 hover:bg-violet-700 text-white font-medium py-4 px-4 rounded-lg transition-colors cursor-pointer">
+                            Submit
+                        </button>
+                    </fieldset>
+                </form>
+                <div class="flex justify-center items-center gap-2 md:gap-4 text-pink-700 text-xl md:text-2xl">
                     <a href="https://www.facebook.com/pranto.ghosh.96387/"><i
                             class="fa-brands fa-facebook hover:scale-125 transition-all duration-300"></i></a>
                     <a href="https://www.instagram.com/prantoghosh1294/"><i
@@ -69,12 +88,9 @@
                             class="fa-brands fa-linkedin hover:scale-125 transition-all duration-300"></i></a>
                 </div>
             </div>
-            <div class="w-1/2 mt-15 md:mt-0 aspect-square object-fill md:p-15 p-0 "><img src="../photos/profile pic.jpg"
-                    class="rounded-full brightness-120 p-3 shadow-[0_0_25px_rgba(168,85,247,0.7),0_0_50px_rgba(236,72,153,0.5)]">
-            </div>
         </div>
         <!-- footer section -->
-        <footer class="border border-t-gray-700 w-full mt-6  md:mt-0">
+        <footer class="border border-t-gray-700 w-full mt-6  md:mt-8">
             <div>
                 <p class="text-center p-4 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500">
                     © All Rights Reserved. <br> Pranto 2026
